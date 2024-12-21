@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./icon/image.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="head">Registration Form</h1><br>
+
+        <p class="para">Enter your details & Submit The Form</p><br>
+
+        <!-- Form Section -->
+
+        <form action="./index.php" method="post">
+            <div class="name">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+            </div>
+
+            <div class="age">
+                <label for="age">Age</label><br>
+                <input type="number" name="age" id="age" placeholder="Enter Your Age" required>
+            </div>
+
+            <div class="gender">
+                <div id="gender">
+                    <label for="gender" aria-required="true">Gender
+                    </label><br>
+                </div>
+                <input type="radio" name="gender" id="gender" value="male">
+                <label for="gender">male</label> <br>
+
+                <input type="radio" name="gender" id="gender" value="female">
+                <label for="gender">female</label> <br>
+            </div>
+
+            <div class="phone">
+                <label for="phone">Phone No.</label><br>
+                <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone No." required>
+            </div>
+
+            <div class="email">
+                <label for="email">Email-Id</label><br>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="education"><br>
+                <div id="education">
+                    <label for="education">Education</label><br>
+                </div>
+
+                <input type="radio" name="education" id="11th" value="11th">
+                <label for="11th">11th</label><br>
+
+                <input type="radio" name="education" id="12th" value="12th">
+                <label for="12th">12th</label><br>
+
+                <input type="radio" name="education" id="graduation" value="graduation">
+                <label for="graduation">Graduation</label><br>
+
+                <input type="radio" name="education" id="postgraduation" value="postgraduation">
+                <label for="postgraduation">Post Graduation</label><br>
+
+                <input type="radio" name="education" id="phd" value="phd">
+                <label for="phd">PHD</label><br>
+
+                <input type="radio" name="education" id="other" value="other">
+                <label for="other" class="other">Other:</label> <input type="text" name="education_other"
+                    id="education_other"><br>
+            </div>
+
+            <div class="college">
+                <label for="college">College</label><br>
+                <input type="text" name="college" id="college" placeholder="College Name" required>
+            </div>
+
+            <!-- Button Section -->
+            <div class="button">
+                <button type="submit" class="btn" id="submit">Submit</button>
+
+                <button type="reset" class="reset">Clear Form</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- JavaScript Section -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
